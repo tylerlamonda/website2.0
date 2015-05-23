@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mainstyle.css"> 	 	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tylerportfolio</title>
+<div class="header_img">
+	<a href="index.html" onfocus="this.blur()">
+		<img src="assets/banner.png">
+	</a>
+</div>
+<div class="nav_container horizontal">
+	<div class="link_link">
+		<a href="index.html">Home</a>
+	</div>
+	<div class="page_link">
+		<a href="cv.html" rel="history">CV</a>
+	</div>
+	<div class="page_link">
+		<a href="contact.html" rel="history">Contact</a>
+	</div>
+</div>
+<div id="content_container">
+	<div id="maincontainer" class="bodycopy" style="display: block;">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<div class="project_header"></div><div class="entry" id="entry_3627900" page_type="project"><div class="project_title">Creatures</div><div class="project_content">
+
+
+		<img src="assets/images/subpage/Creatures/Creatures_1.png" width="960" align="left"><br>
+
+
+
+		<img src="assets/images/subpage/Creatures/Creatures_2.png" width="960"  align="left"><br>
+		
+
+		<img src="assets/images/subpage/Creatures/Creatures_PR (1).png" width="960"  align="left"><br>
+		
+
+		<img src="assets/images/subpage/Creatures/Creatures_PR (2).png" width="960"  align="left"><br>
+		
+
+		<img src="assets/images/subpage/Creatures/Creatures_PR (3).png" width="960"  align="left"><br>
+		
+
+		<img src="assets/images/subpage/Creatures/Creatures_PR (4).png" width="960"  align="left"><br>
+		
+
+		<img src="assets/images/subpage/Creatures/Creatures_PR (5).png" width="960"  align="left"><br>
+
+
+		<img src="assets/images/subpage/Creatures/Creatures_PR (6).png" width="960"  align="left"><br>
+
+
+		<img src="assets/images/subpage/Creatures/Creatures_PR (7).png" width="960"  align="left"><br>
+
+
+	</div>
+</div>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+createHover();
+});
+function createHover() {
+$(".project_thumb").unbind('mouseenter').unbind('mouseleave'); // reset the hover to prevent doubling
+$(".project_thumb").bind("mouseenter",function() { // create hover
+$("img", this).fadeTo("fast", 0.7); // Sets the opacity to 70% on hover
+}).bind("mouseleave",function(){
+$("img", this).fadeTo("fast", 1.0); // Sets the opacity back to 100% on mouseout
+});
+$(".next_page").attr("onclick",""); // remove the pagination function
+$(".prev_page").attr("onclick",""); // remove the pagination function
+$(".next_page").click(function() { changePage((parseInt($("#current_page").val())+1),$("#limit").val()); setTimeout("createHover()",100); });
+$(".prev_page").click(function() { changePage((parseInt($("#current_page").val())-1),$("#limit").val()); setTimeout("createHover()",100); });
+}
+</script>
+<script type="text/javascript">
+	$(function(){
+		$("#includedContent").load("menu.html");
+	});
+</script>
+	<div id="includedContent"></div>
+</body>
+</html>

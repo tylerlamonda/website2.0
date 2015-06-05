@@ -166,10 +166,10 @@
 
 .main-text {
     position: absolute;
-    top: 30px;
-    left: 5%;
+    /*top: 30px;*/
+    /*left: 5%;*/
     /*width: 100%;*/
-    color: #FFF;
+    /*color: #FFF;*/
     text-align: left;
     z-index:100;
     /*max-width: 960px;*/

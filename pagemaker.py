@@ -8,15 +8,19 @@ import string
 import pudb
 
 class PageGen(object):
-  def __init__(self, template):
+  def __init__(self, template, images=None):
     if os.path.exists(template):
       with open(template, 'r') as file:
         self.terms = load(file.read())
+      if images:
+        with open(images, 'r') as file:
+          self.terms.update(load(file.read()))
     self.re_token = re.compile('\$\{([a-zA-Z0-9_]*)\}')
 
   def __call__(self, format_file, file):
     # update terms with format_file dict
-    self.terms.update(format_file)
+    if format_file:
+      self.terms.update(format_file)
     # find terms within the html file
     matches = self.re_token.finditer(file)
     for match in matches:
@@ -70,9 +74,9 @@ def main():
     with open(args.format, 'r') as file:
       format_file = load(file.read())
 
-  if html_format and format_file:
+  if html_format:
     # Call PageGen to replace tokens with html strings
-    page_gen = PageGen('template.yaml')
+    page_gen = PageGen('template.yaml', 'images.yaml')
     with open(args.html[1:], 'w') as output:
       generated_file = page_gen(format_file, html_format)
       output.write(generated_file)

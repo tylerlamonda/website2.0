@@ -496,6 +496,30 @@ sledgehammer_facesbs1:
 sledgehammer_sledgetl_5:
   SOURCE: ./assets/images/subpage/sledgehammer/SledgeTL_5.jpg
   OUTPUT: ${IMAGE}
+chasingdead_boss_5:
+  SOURCE: ./assets/images/subpage/chasingdead_boss/5.jpg
+  OUTPUT: ${IMAGE}
+chasingdead_boss_1:
+  SOURCE: ./assets/images/subpage/chasingdead_boss/1.jpg
+  OUTPUT: ${IMAGE}
+chasingdead_boss_3:
+  SOURCE: ./assets/images/subpage/chasingdead_boss/3.jpg
+  OUTPUT: ${IMAGE}
+chasingdead_boss_8:
+  SOURCE: ./assets/images/subpage/chasingdead_boss/8.jpg
+  OUTPUT: ${IMAGE}
+chasingdead_boss_4:
+  SOURCE: ./assets/images/subpage/chasingdead_boss/4.jpg
+  OUTPUT: ${IMAGE}
+chasingdead_boss_2:
+  SOURCE: ./assets/images/subpage/chasingdead_boss/2.jpg
+  OUTPUT: ${IMAGE}
+chasingdead_boss_7:
+  SOURCE: ./assets/images/subpage/chasingdead_boss/7.jpg
+  OUTPUT: ${IMAGE}
+chasingdead_boss_6:
+  SOURCE: ./assets/images/subpage/chasingdead_boss/6.jpg
+  OUTPUT: ${IMAGE}
 2009-2011bak_fc3:
   SOURCE: ./assets/images/subpage/2009-2011bak/FC3.png
   OUTPUT: ${IMAGE}

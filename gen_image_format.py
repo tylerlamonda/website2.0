@@ -15,7 +15,7 @@ def main():
             for fname in filelist:
                 # prepare strings for vraiables
                 if fname.endswith(('.jpg', '.png')):
-                    second_part = os.path.splitext(fname)[0].lower().replace(" ", "").replace("(","").replace(")","").replace(".", "").replace("-","")
+                    second_part = os.path.splitext(fname)[0].lower().replace(" ", "").replace("(","").replace(")","").replace(".", "").replace("-","").replace("\'","")
                     output_str += '%s_%s:\n  SOURCE: %s\n  OUTPUT: ${IMAGE}\n' % (first_part, second_part, os.path.join(dirname, fname))
         file.write(output_str)
 

@@ -40,7 +40,7 @@ frontpage_cp_3_thesisproject:
 frontpage_rca:
   SOURCE: ./assets/images/frontpage/RCA.png
   OUTPUT: ${IMAGE}
-frontpage_tyler'swebpage:
+frontpage_tylerswebpage:
   SOURCE: ./assets/images/frontpage/Tyler's webpage.jpg
   OUTPUT: ${IMAGE}
 frontpage_fostertab3:
@@ -78,6 +78,9 @@ thumbnails_20092011:
   OUTPUT: ${IMAGE}
 thumbnails_website_tab:
   SOURCE: ./assets/images/frontpage/thumbnails/Website_Tab.png
+  OUTPUT: ${IMAGE}
+thumbnails_bosstab:
+  SOURCE: ./assets/images/frontpage/thumbnails/BossTab.png
   OUTPUT: ${IMAGE}
 thumbnails_chasingdead:
   SOURCE: ./assets/images/frontpage/thumbnails/Chasing Dead.png
@@ -507,6 +510,9 @@ chasingdead_boss_3:
   OUTPUT: ${IMAGE}
 chasingdead_boss_8:
   SOURCE: ./assets/images/subpage/chasingdead_boss/8.jpg
+  OUTPUT: ${IMAGE}
+chasingdead_boss_chasingdeadscreenshot1:
+  SOURCE: ./assets/images/subpage/chasingdead_boss/Chasing Dead Screen Shot1.jpg
   OUTPUT: ${IMAGE}
 chasingdead_boss_4:
   SOURCE: ./assets/images/subpage/chasingdead_boss/4.jpg
